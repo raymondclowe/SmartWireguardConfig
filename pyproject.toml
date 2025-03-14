@@ -1,0 +1,13 @@
+[project]
+name = "smartwireguardconfig"
+version = "0.1.0"
+description = "Smartly create a wireguard config to route only geoblocked domains via the wireguard vpn"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "dnspython>=2.7.0",
+]
+
+
+[project.scripts]
+smartwireguard = "main:main"  # Defines an executable `smartwireguard` that runs `main.main()`
